@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+    <style>
+    	
+    	table {
+            border-collapse: collapse;
+            width: 100%;
+            }
+            
+            th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        
+      input[type="submit"] {
+      background-color: steelblue;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+        
+    </style> 
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="nama">Nama:</label></td>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat:</label></td>
+                <td><textarea id="alamat" name="alamat" cols="27" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="jenis_kelamin">Jenis Kelamin:</label></td>
+                <td>
+                    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki_laki">Laki-laki</label><br>
+                    <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+                    <label for="wanita">Wanita</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+       <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
